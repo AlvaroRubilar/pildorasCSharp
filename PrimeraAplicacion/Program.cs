@@ -10,7 +10,7 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(7*5);
+            Console.WriteLine(7/5);
 
         }
     }
