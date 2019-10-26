@@ -10,9 +10,9 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bienvenidos a C#");
-            //Esto es un comentario
-            //en c#
+            //Console.WriteLine("Bienvenidos a C#");
+            int edad = 28;
+            Console.WriteLine(edad);
 
 
         }
