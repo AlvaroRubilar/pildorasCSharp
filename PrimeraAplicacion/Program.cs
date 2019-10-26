@@ -11,7 +11,10 @@ namespace PrimeraAplicacion
         static void Main(string[] args)
         {
             Console.WriteLine("Bienvenidos a C#");
-            
+            //Esto es un comentario
+            //en c#
+
+
         }
     }
 }
