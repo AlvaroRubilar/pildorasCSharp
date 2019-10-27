@@ -10,9 +10,13 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            var edadPersona = 27;
-            Console.WriteLine(edadPersona);
-
+            double temperatura = 34.7;
+            int temperaturaMadrid;
+            // conversión explícita
+            //casting
+            temperaturaMadrid = (int) temperatura;
+            // trunca
+            Console.WriteLine(temperaturaMadrid);
         }
     }
 }
