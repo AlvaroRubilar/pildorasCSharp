@@ -10,18 +10,11 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            double temperatura = 34.7;
-            int temperaturaMadrid;
-            // conversión explícita
-            //casting
-            temperaturaMadrid = (int) temperatura;
-            // trunca
-            int habitantesCiudad = 100000;
-            long habitantesCiudad2018 = habitantesCiudad;
-            // conversión implícita solo con tipos parecidos
-            float pesoMaterial = 5.78F;
-            double pesoMaterialPrec = pesoMaterial;
-            Console.WriteLine(pesoMaterialPrec);
+            Console.WriteLine("Introduce el primer número");
+            int num1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Introduce el segundo número");
+            int num2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("El resultado de la suma es " + (num1 + num2));
         }
     }
 }
