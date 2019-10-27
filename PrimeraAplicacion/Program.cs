@@ -10,7 +10,9 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(9%3);
+            int edad = 19;
+            Console.WriteLine("Tienes una edad de " + edad);
+
 
         }
     }
