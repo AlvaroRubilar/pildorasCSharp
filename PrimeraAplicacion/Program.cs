@@ -11,10 +11,10 @@ namespace PrimeraAplicacion
         static void Main(string[] args)
         {
             int edad = 19;
-           
-            Console.WriteLine("Tienes una edad de " + ++edad + " años");
-            
-            
+            edad += 8;
+            Console.WriteLine("Tienes una edad de " + --edad + " años");
+
+
 
         }
     }
