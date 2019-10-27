@@ -16,7 +16,10 @@ namespace PrimeraAplicacion
             //casting
             temperaturaMadrid = (int) temperatura;
             // trunca
-            Console.WriteLine(temperaturaMadrid);
+            int habitantesCiudad = 100000;
+            long habitantesCiudad2018 = habitantesCiudad;
+            // conversión implícita solo con tipos parecidos
+            Console.WriteLine(habitantesCiudad2018);
         }
     }
 }
