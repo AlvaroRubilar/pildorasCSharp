@@ -10,9 +10,9 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            int edadPersona1, edadPersona2, edadPersona3, edadPersona4;
-            edadPersona1 = edadPersona2 = edadPersona3 = edadPersona4 = 27;
-            Console.WriteLine(edadPersona2);
+            var edadPersona = 27;
+            Console.WriteLine(edadPersona);
+
         }
     }
 }
