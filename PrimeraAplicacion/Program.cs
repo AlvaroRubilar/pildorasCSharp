@@ -19,7 +19,9 @@ namespace PrimeraAplicacion
             int habitantesCiudad = 100000;
             long habitantesCiudad2018 = habitantesCiudad;
             // conversión implícita solo con tipos parecidos
-            Console.WriteLine(habitantesCiudad2018);
+            float pesoMaterial = 5.78F;
+            double pesoMaterialPrec = pesoMaterial;
+            Console.WriteLine(pesoMaterialPrec);
         }
     }
 }
