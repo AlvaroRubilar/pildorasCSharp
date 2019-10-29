@@ -8,15 +8,16 @@ namespace PracticaMetodos
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            mesajeEnPantalla();
-            Console.WriteLine("Mensaje desde el Main");
-        }
         static void mesajeEnPantalla()
         {
             Console.WriteLine("Mensaje desde el método mensajeEnPantalla");
 
         }
+        static void Main(string[] args)
+        {
+            mesajeEnPantalla();
+            Console.WriteLine("Mensaje desde el Main");
+        }
+       
     }
 }
