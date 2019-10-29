@@ -8,17 +8,14 @@ namespace PracticaMetodos
 {
     class Program
     {
-        static void mesajeEnPantalla()
-        {
-            Console.WriteLine("Mensaje desde el método mensajeEnPantalla");
 
-        }
         static void Main(string[] args)
         {
-            mesajeEnPantalla();
-            mesajeEnPantalla();
-            Console.WriteLine("Mensaje desde el Main");
+            sumaNumeros(2, 4);
         }
-       
+        static void sumaNumeros(int num1, int num2)
+        {
+            Console.WriteLine("La suma de los números es:" + num1 + num2);
+        }
     }
 }
