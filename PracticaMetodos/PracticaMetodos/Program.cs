@@ -15,7 +15,7 @@ namespace PracticaMetodos
         }
         static void sumaNumeros(int num1, int num2)
         {
-            Console.WriteLine("La suma de los números es: " + (num1 + num2));
+            Console.WriteLine($"La suma de los números es: {num1+num2}");
         }
     }
 }
