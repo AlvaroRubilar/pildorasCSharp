@@ -10,11 +10,11 @@ namespace PrimeraAplicacion
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Introduce el primer número");
-            int num1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Introduce el segundo número");
-            int num2 = int.Parse(Console.ReadLine());
-            Console.WriteLine("El resultado de la suma es " + (num1 + num2));
+            const int VALOR = 5;
+            const int VALOR2 = 7;
+            Console.WriteLine("El valor de la constante es: {1} ", VALOR, VALOR2);
+
+
         }
     }
 }
