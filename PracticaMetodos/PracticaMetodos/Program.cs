@@ -16,6 +16,7 @@ namespace PracticaMetodos
         static void Main(string[] args)
         {
             mesajeEnPantalla();
+            mesajeEnPantalla();
             Console.WriteLine("Mensaje desde el Main");
         }
        
