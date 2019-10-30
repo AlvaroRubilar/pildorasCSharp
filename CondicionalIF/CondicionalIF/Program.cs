@@ -10,10 +10,12 @@ namespace CondicionalIF
     {
         static void Main(string[] args)
         {
-
-            bool haceFrio;
-            haceFrio = true;
-            Console.WriteLine(!haceFrio);
+            int edad = 25;
+            Console.WriteLine("vamos a evaluar si eres mayor de edad");
+            if (edad >= 18)
+            {
+                Console.WriteLine("Adelante, puedes pasar porque eres mayor de edad");
+            }
 
         }
     }
