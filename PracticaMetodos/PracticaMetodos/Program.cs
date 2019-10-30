@@ -8,6 +8,8 @@ namespace PracticaMetodos
 {
     class Program
     {
+        int numero1 = 5;
+        int numero2 = 7;
 
         static void Main(string[] args)
         {
@@ -15,12 +17,13 @@ namespace PracticaMetodos
         }
         void primerMetodo()
         {
-            int numero = 5;
+            
+            Console.WriteLine((numero1+numero2));
         }
 
         void segundoMetodo(){
 
-            Console.WriteLine(numero);
+            Console.WriteLine((numero1 + numero2));
         }
 
     }
