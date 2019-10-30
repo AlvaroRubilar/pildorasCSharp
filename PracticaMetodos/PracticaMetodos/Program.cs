@@ -11,9 +11,14 @@ namespace PracticaMetodos
 
         static void Main(string[] args)
         {
-            Console.WriteLine(divideNumeros(18, 7)); 
+            Console.WriteLine(divideNumeros(18, 7));
         }
-        static double divideNumeros(double num1, int num2) => num1 / num2;
-        
+        static double divideNumeros(double num1, int num2)
+        {
+            double resultado;
+            resultado = num1 / num2;
+            return resultado;
+        }
+
     }
 }
