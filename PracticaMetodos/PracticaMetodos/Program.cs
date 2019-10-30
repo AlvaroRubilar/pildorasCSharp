@@ -23,5 +23,9 @@ namespace PracticaMetodos
         {
             return num1+num2+num3;
         }
+        static double Suma(int num1, double num2)
+        {
+            return num1 + num2;
+        }
     }
 }
