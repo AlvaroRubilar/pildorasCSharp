@@ -8,23 +8,19 @@ namespace PracticaMetodos
 {
     class Program
     {
-        int numero1 = 5;
-        int numero2 = 7;
+
 
         static void Main(string[] args)
         {
-           
+            Console.WriteLine(Suma(7,5.3));
         }
-        void primerMetodo()
-        {
-            
-            Console.WriteLine((numero1+numero2));
-        }
+        static int Suma(int operador1, int operador2) => operador1 + operador2;
 
-        void segundoMetodo(){
+        static double Suma(double operador1, double operador2) => operador1 + operador2;
+        static int Suma(int numero1, int numero2, int numero3) => numero1 + numero2 + numero3;
 
-            Console.WriteLine((numero1 + numero2));
-        }
+
+        static int Suma(int numero1, int numero2, int numero3, int numero4) => numero1 + numero2 + numero3 + numero4;
 
     }
 }
