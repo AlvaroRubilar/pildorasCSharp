@@ -15,9 +15,6 @@ namespace PracticaMetodos
             Console.WriteLine(Suma(7,5.3));
         }
 
-        private static double Suma(int v1, double v2)
-        {
-            return v1 + v2;
-        }
+        private static double Suma(int v1, double v2) => v1 + v2;
     }
 }
