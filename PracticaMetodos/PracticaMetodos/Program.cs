@@ -13,7 +13,7 @@ namespace PracticaMetodos
         {
             Console.WriteLine(divideNumeros(18, 7)); 
         }
-        static int divideNumeros(int num1, int num2)
+        static double divideNumeros(double num1, int num2)
         {
             //Console.WriteLine($"La suma de los números es: {num1+num2}");
             return num1 / num2;
