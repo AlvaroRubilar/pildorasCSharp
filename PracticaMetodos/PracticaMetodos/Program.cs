@@ -11,11 +11,12 @@ namespace PracticaMetodos
 
         static void Main(string[] args)
         {
-            sumaNumeros(2, 4);
+            Console.WriteLine(sumaNumeros(2, 4)); 
         }
-        static void sumaNumeros(int num1, int num2)
+        static int sumaNumeros(int num1, int num2)
         {
-            Console.WriteLine($"La suma de los números es: {num1+num2}");
+            //Console.WriteLine($"La suma de los números es: {num1+num2}");
+            return num1 + num2;
         }
     }
 }
