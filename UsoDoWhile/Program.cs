@@ -7,11 +7,11 @@ namespace UsoDoWhile
         static void Main(string[] args)
         {
             int z = 10;
-            while (z<10)
+            do
             {
-                System.Console.WriteLine("Impresión "+10);
+                System.Console.WriteLine("Impresión "+z);
                 z++;
-            }
+            }while (z<10);
         }
     }
 }
