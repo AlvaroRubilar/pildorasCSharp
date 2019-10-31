@@ -10,14 +10,17 @@ namespace CondicionalIF
     {
         static void Main(string[] args)
         {
-            int edad = 15;
+            
             Console.WriteLine("Vamos a evaluar si puedes conducir un vehículo");
-            bool carnet = true;
-            if (carnet)
+            Console.WriteLine("Introduce tu edad, por favor");
+            int edad = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("¿Tienes carnet? si/no");
+            string carnet = Console.ReadLine();
+            if(edad>=18 && carnet=="si")
                 Console.WriteLine("Puedes conducir vehículos");
             else
-                Console.WriteLine("Lo siento pero no puedes conducir vehículos");
-            Console.WriteLine( "Aquí termina el programa");
+                Console.WriteLine("No puedes conduir vehículos");
+
         }
     }
 }
