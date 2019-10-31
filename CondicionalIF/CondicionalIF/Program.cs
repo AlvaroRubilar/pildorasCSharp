@@ -10,23 +10,19 @@ namespace CondicionalIF
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Introduce el primer parcial");
+            int parcial1 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Introduce el segundo parcial");
+            int parcial2 = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Introduce el tercel parcial");
+            int parcial3 = Int32.Parse(Console.ReadLine());
 
-            Console.WriteLine("Vamos a evaluar si puedes conducir un vehículo");
-            Console.WriteLine("Introduce tu edad, por favor");
-            int edad = Int32.Parse(Console.ReadLine());
-            if (edad < 18)
-                Console.WriteLine("No puedes conducir vehículos");
+            if (parcial1 >= 5 && parcial2 >= 5 && parcial3 >= 5)
+                Console.WriteLine("La nota media es "+(parcial1+parcial2+parcial3)/3);
             else
-            {
-                Console.WriteLine("¿Tienes carnet?");
-                string carnet = Console.ReadLine();
-                int compara = String.Compare(carnet, "si", true);
-                if(compara==0)
-                    Console.WriteLine("Puedes conducir vehículos");
-                else
-                    Console.WriteLine("Lo siento mucho no puedes conducir");
+                Console.WriteLine("Vuelve en septiembre");
 
-            }
+
         }
     }
 }
