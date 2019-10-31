@@ -6,12 +6,21 @@ namespace UsoDoWhile
     {
         static void Main(string[] args)
         {
-            int z = 10;
+            Random numero = new Random();
+            int numeroAleatorio = numero.Next(0, 100);
+
+            int intentos = 0;
+            int adivina;
             do
             {
-                System.Console.WriteLine("Impresión "+z);
-                z++;
-            }while (z<10);
+                intentos++;
+                Console.WriteLine("Ingresa un número:");
+                adivina = int.Parse(Console.ReadLine());
+
+                Console.WriteLine(adivina < numeroAleatorio ? "Más alto" :
+                    (adivina > numeroAleatorio ? "Más bajo" : $"Has acertado en {intentos} intentos"));
+                
+            }while (adivina != numeroAleatorio);
         }
     }
 }
