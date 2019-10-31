@@ -19,7 +19,12 @@ namespace EstructuraSwitch
                 case "avión":
                     Console.WriteLine("Velocidad media: 800 km/hr");
                     break;
+                default:
+                    Console.WriteLine("Transporte no contemplado");
+                    break;
+
             }
+            Console.WriteLine("Ha terminado el programa");
         }
     }
 }
