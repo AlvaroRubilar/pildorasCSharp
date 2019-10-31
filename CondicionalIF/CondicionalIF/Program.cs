@@ -12,10 +12,11 @@ namespace CondicionalIF
         {
             int edad = 15;
             Console.WriteLine("Vamos a evaluar si puedes conducir un vehículo");
-            bool carnet = true;
-            if(carnet==true)
+            bool carnet = false;
+            if (carnet)
                 Console.WriteLine("Puedes conducir vehículos");
-
+            else
+                Console.WriteLine("Lo siento pero no puedes conducir vehículos");
         }
     }
 }
