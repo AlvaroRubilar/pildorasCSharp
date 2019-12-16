@@ -15,20 +15,27 @@ namespace UsoDoWhile
             {
                 intentos++;
                 Console.WriteLine("Ingresa un número:");
-                try{
+                try
+                {
 
                     adivina = int.Parse(Console.ReadLine());
                 }
-                catch(FormatException ex){
+                catch (FormatException ex)
+                {
 
                     System.Console.WriteLine("No has introducido un número valido, se toma como número intoducido el cero");
-                    adivina=0;
+                    adivina = 0;
+                }
+                catch (OverflowException ex)
+                {
+                    System.Console.WriteLine("Has introducido un valor demasiado alto, se toma toma como número introducido el cero");
+                    adivina = 0;
                 }
 
                 Console.WriteLine(adivina < numeroAleatorio ? "Más alto" :
                     (adivina > numeroAleatorio ? "Más bajo" : $"Has acertado en {intentos} intentos"));
-                
-            }while (adivina != numeroAleatorio);
+
+            } while (adivina != numeroAleatorio);
         }
     }
 }
