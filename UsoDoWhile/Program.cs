@@ -20,17 +20,14 @@ namespace UsoDoWhile
 
                     adivina = int.Parse(Console.ReadLine());
                 }
-                catch (FormatException ex)
+                catch (Exception ex)
                 {
 
                     System.Console.WriteLine("No has introducido un número valido, se toma como número intoducido el cero");
+                    System.Console.WriteLine(ex.Message);
                     adivina = 0;
                 }
-                catch (OverflowException ex)
-                {
-                    System.Console.WriteLine("Has introducido un valor demasiado alto, se toma toma como número introducido el cero");
-                    adivina = 0;
-                }
+              
 
                 Console.WriteLine(adivina < numeroAleatorio ? "Más alto" :
                     (adivina > numeroAleatorio ? "Más bajo" : $"Has acertado en {intentos} intentos"));
