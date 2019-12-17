@@ -23,7 +23,7 @@ namespace EjemplosPoo
 
         class Circulo 
         {
-            const double pi = 3.1416;  // proiedad de la clase Circulo. Campo de clase.
+            private const double pi = 3.1416;  // proiedad de la clase Circulo. Campo de clase.
             public double calculoArea(int radio) //métdo de clase, ¿Qué pueden hacer los objeto de este tipo
             {
                 return pi * radio * radio;
