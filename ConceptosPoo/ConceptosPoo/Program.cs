@@ -10,7 +10,7 @@ namespace ConceptosPoo
         }
         static void RealizarTarea()
         {
-            Punto origen = new Punto();
+            Punto origen = new Punto(12,13);
         }
     }
 
