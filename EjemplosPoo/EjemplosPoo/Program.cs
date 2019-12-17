@@ -6,7 +6,9 @@ namespace EjemplosPoo
     {
         static void Main(string[] args)
         {
+            
             ConversorEuroDolar obj = new ConversorEuroDolar();
+            obj.euro = 1.45;
             Console.WriteLine(obj.convierte(50));
             
             
