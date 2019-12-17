@@ -13,6 +13,8 @@ namespace UsoCoches
             Console.WriteLine(coche2.getInfoCoche());
             Coche coche3 = new Coche(4500.25, 1.20035);
             Console.WriteLine(coche3.getInfoCoche());
+            coche3.setExtras(true, "cuero");
+            Console.WriteLine(coche3.getExtras());
         }
     }
     class Coche
@@ -33,7 +35,16 @@ namespace UsoCoches
         {
             return "Información del coche:\n"+"Ruedas:\t"+ruedas+"\nLargo:\t"+largo+" cm\nAncho:\t"+ancho+" m";
         }
+        public void setExtras(bool paramClimatizador, String paramTapiceria)
+        {
 
+            climatizador = paramClimatizador;
+            tapiceria = paramTapiceria;
+        }
+        public String getExtras()
+        {
+            return "Extras del coche:\n" + "Tapicería:\t" + tapiceria + "\nClimatizador:\t" + climatizador;
+        }
         private int ruedas;
         private double largo;
         private double ancho;
