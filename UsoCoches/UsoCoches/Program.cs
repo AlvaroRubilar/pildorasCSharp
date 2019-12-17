@@ -17,7 +17,7 @@ namespace UsoCoches
             Console.WriteLine(coche3.getExtras());
         }
     }
-    class Coche
+    partial class Coche
     {
         public Coche()
         {
@@ -33,6 +33,8 @@ namespace UsoCoches
             this.ancho = ancho;
             tapiceria = "tela";
         }
+    }
+   partial class Coche {
         public String getInfoCoche()
         {
             return "Información del coche:\n"+"Ruedas:\t"+ruedas+"\nLargo:\t"+largo+" cm\nAncho:\t"+ancho+" m";
