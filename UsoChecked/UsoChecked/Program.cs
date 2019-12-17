@@ -9,7 +9,7 @@ namespace UsoChecked
             
 
             int numero = int.MaxValue;
-            int resultado = numero + 20;
+            int resultado = checked(numero + 20);
             
             Console.WriteLine(resultado);
             
