@@ -17,12 +17,13 @@ namespace EjemplosPoo
 
             Console.WriteLine(miCirculo2.calculoArea(9));
             
+            
 
         }
 
         class Circulo 
         {
-            double pi = 3.1416;  // proiedad de la clase Circulo. Campo de clase.
+            const double pi = 3.1416;  // proiedad de la clase Circulo. Campo de clase.
             public double calculoArea(int radio) //métdo de clase, ¿Qué pueden hacer los objeto de este tipo
             {
                 return pi * radio * radio;
