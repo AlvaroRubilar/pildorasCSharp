@@ -10,5 +10,9 @@ namespace ConceptosPoo
         {
             Console.WriteLine($"Coordenada x: {x}, Coordenada y: {y}");
         }
+        public Punto()
+        {
+            Console.WriteLine("este es el constructor por defecto");
+        }
     }
 }
