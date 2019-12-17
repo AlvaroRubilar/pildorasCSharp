@@ -10,7 +10,7 @@ namespace ConceptosPoo
         }
         static void RealizarTarea()
         {
-            //TODO: se ve en tareas
+            Punto origen = new Punto();
         }
     }
 
