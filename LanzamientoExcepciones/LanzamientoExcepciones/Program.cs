@@ -8,7 +8,16 @@ namespace LanzamientoExcepciones
         {
             Console.WriteLine("Introduce número de mes");
             int numeroMes = int.Parse(Console.ReadLine());
-            Console.WriteLine(NombreDelMes(numeroMes));
+            try
+            {
+                Console.WriteLine(NombreDelMes(numeroMes));
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Mensaje de la excepción: " + e.Message);
+
+            }
             Console.WriteLine("Aquí continuaría la ejecución del resto del programa");
         }
 
@@ -41,7 +50,9 @@ namespace LanzamientoExcepciones
                 case 12:
                     return "Diciembre";
                 default:
-                    return "Mes erroneo";
+                    throw new ArgumentException();
+
+
             }
         }
     }
