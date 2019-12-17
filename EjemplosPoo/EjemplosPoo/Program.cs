@@ -11,7 +11,11 @@ namespace EjemplosPoo
             miCirculo = new Circulo(); // Iniciación de variable/objeto de tipo Circulo. Instanciar una clase
                                        // Instanciación. Ejemplarización. Creación de ejemplar de la clase
 
-            Console.WriteLine(miCirculo.calculoArea(5)); 
+            Console.WriteLine(miCirculo.calculoArea(5));
+
+            Circulo miCirculo2 = new Circulo();
+
+            Console.WriteLine(miCirculo2.calculoArea(9));
             
 
         }
