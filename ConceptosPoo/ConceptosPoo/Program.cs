@@ -6,7 +6,7 @@ namespace ConceptosPoo
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            RealizarTarea();
         }
         static void RealizarTarea()
         {
