@@ -8,7 +8,8 @@ namespace EjemplosPoo
         {
             
             ConversorEuroDolar obj = new ConversorEuroDolar();
-            obj.euro = 1.45;
+            obj.cambiaValorEuro(2);
+            
             Console.WriteLine(obj.convierte(50));
             
             
@@ -28,10 +29,14 @@ namespace EjemplosPoo
         }
         class ConversorEuroDolar
         {
-            public double euro = 1.253;
+            private  double euro = 1.253;
             public double convierte(double cantidad)
             {
                 return cantidad * euro;
+            }
+            public void cambiaValorEuro(double nuevoValor)
+            {
+                euro = (nuevoValor<0)? 1.253:nuevoValor;
             }
         }
     }
