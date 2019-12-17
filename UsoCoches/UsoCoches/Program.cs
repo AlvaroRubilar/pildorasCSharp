@@ -24,22 +24,24 @@ namespace UsoCoches
             ruedas = 4;
             largo = 2300.5;
             ancho = 0.800;
+            tapiceria = "tela";
         }
-        public Coche(double largoCoche, double anchoCoche)
+        public Coche(double largo, double ancho)
         {
             ruedas = 4;
-            largo = largoCoche;
-            ancho = anchoCoche;
+            this.largo = largo;
+            this.ancho = ancho;
+            tapiceria = "tela";
         }
         public String getInfoCoche()
         {
             return "Información del coche:\n"+"Ruedas:\t"+ruedas+"\nLargo:\t"+largo+" cm\nAncho:\t"+ancho+" m";
         }
-        public void setExtras(bool paramClimatizador, String paramTapiceria)
+        public void setExtras(bool climatizador, String tapiceria)
         {
 
-            climatizador = paramClimatizador;
-            tapiceria = paramTapiceria;
+            this.climatizador = climatizador;
+            this.tapiceria = tapiceria;
         }
         public String getExtras()
         {
