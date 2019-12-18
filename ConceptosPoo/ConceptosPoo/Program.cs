@@ -10,8 +10,10 @@ namespace ConceptosPoo
         }
         static void RealizarTarea()
         {
-            Punto origen = new Punto();
-            Punto destino = new Punto(128, 80);
+            Punto origen = new Punto(1,2);
+            Punto destino = new Punto(6, 14);
+            double distancia = origen.DistanciaHasta(destino);
+            Console.WriteLine($"La distancia entre los dos puntos es de {distancia}");
         }
     }
 
