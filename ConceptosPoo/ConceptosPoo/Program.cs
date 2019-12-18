@@ -14,6 +14,7 @@ namespace ConceptosPoo
             Punto destino = new Punto(6, 14);
             double distancia = origen.DistanciaHasta(destino);
             Console.WriteLine($"La distancia entre los dos puntos es de {distancia}");
+            Console.WriteLine($"Número de objetos creados: {Punto.ContadorDeObjetos()}");
         }
     }
 
