@@ -1,6 +1,5 @@
 ﻿using System;
-using static System.Math;
-using static System.Console;
+
 
 namespace ClaseAnonimas
 {
@@ -8,10 +7,15 @@ namespace ClaseAnonimas
     {
         static void Main(string[] args)
         {
-            double raiz = Sqrt(9);
-            double potencia = Pow(3, 4);
-            WriteLine(raiz);
-            WriteLine(potencia);
+            var miVariable = new { Nombre = "Álvaro", Edad = 19 };
+
+            Console.WriteLine(miVariable.Nombre + " " + miVariable.Edad);
+
+            var miOtravariable = new { Nombre = "Ana", Edad = 25 };
+
+            miVariable = miOtravariable;
+
+
         }
     }
 }
