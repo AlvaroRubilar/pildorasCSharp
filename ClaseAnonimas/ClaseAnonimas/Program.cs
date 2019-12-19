@@ -1,4 +1,6 @@
 ﻿using System;
+using static System.Math;
+using static System.Console;
 
 namespace ClaseAnonimas
 {
@@ -6,10 +8,10 @@ namespace ClaseAnonimas
     {
         static void Main(string[] args)
         {
-            double raiz = Math.Sqrt(9);
-            double potencia = Math.Pow(3, 4);
-            Console.WriteLine(raiz);
-            Console.WriteLine(potencia);
+            double raiz = Sqrt(9);
+            double potencia = Pow(3, 4);
+            WriteLine(raiz);
+            WriteLine(potencia);
         }
     }
 }
