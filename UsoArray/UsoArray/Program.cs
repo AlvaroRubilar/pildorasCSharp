@@ -6,42 +6,22 @@ namespace UsoArray
     {
         static void Main(string[] args)
         {
-            //array implícito
-            var datos = new[] { "Alvaro", "Rubilar", "Chile" };//deben ser del mismo tipo
-            var valores = new[] { 15, 28, 35, 75.5, 30.3 };//se convierte en double
-            //array de objetos
-            Empleados Ana = new Empleados("Ana", 27);
-            Empleados[] arrayEmpleados = new Empleados[2];
-            arrayEmpleados[0] = new Empleados("Sara", 37);
-            arrayEmpleados[1] = Ana;
-            //array de tipos de o clases anónimas
-            var personas = new[]
-            {
-                new {Nombre= "Juan", Edad=19 },
-                new {Nombre= "María", Edad= 49},
-                new {Nombre= "Diana", Edad= 35}
-            };
-
-            foreach (var variable in personas)
-                
-            {
-                Console.WriteLine(variable); 
-            }
+            int[] numeros = new int[4];
+            numeros[0] = 7;
+            numeros[1] = 9;
+            numeros[2] = 15;
+            numeros[3] = 3;
+            ProcesaDatos(numeros);
 
         }
-    }
-    class Empleados
-    {
-        public Empleados(String nombre, int edad)
+        static void ProcesaDatos(int[] datos)
         {
-            this.nombre = nombre;
-            this.edad = edad;
-
+            foreach (var i in datos)
+            {
+                Console.WriteLine(i);
+            }
         }
-        public String getInfo() => "Nombre del empleado: " + nombre + "\nEdad: " + edad;
 
-
-        private String nombre;
-        private int edad;
     }
+
 }
