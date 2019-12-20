@@ -12,15 +12,20 @@ namespace UsoArray
             numeros[2] = 15;
             numeros[3] = 3;
             ProcesaDatos(numeros);
+            foreach (int i in numeros)
+            {
+                Console.WriteLine(i);
+            }
 
         }
         static void ProcesaDatos(int[] datos)
         {
-            foreach (var i in datos)
+            for (int i = 0; i < datos.Length; i++)
             {
-                Console.WriteLine(i);
+                datos[i] += 10;
             }
         }
+
 
     }
 
