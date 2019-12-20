@@ -21,7 +21,12 @@ namespace UsoArray
                 new {Nombre= "María", Edad= 49},
                 new {Nombre= "Diana", Edad= 35}
             };
-            Console.WriteLine(personas[1]);
+
+            for (int i = 0; i < valores.Length; i++)
+            {
+                Console.WriteLine(valores[i]);
+            }
+           
         }
     }
     class Empleados
