@@ -21,13 +21,12 @@ namespace UsoArray
                 new {Nombre= "María", Edad= 49},
                 new {Nombre= "Diana", Edad= 35}
             };
-            int contador = 0;
-            for (int i = 15; i>=11; i++)
+
+            for (int i = 0; i < arrayEmpleados.Length; i++)
             {
-                Console.WriteLine(valores[contador]);
-                contador++;
+                Console.WriteLine(arrayEmpleados[i].getInfo());
             }
-           
+
         }
     }
     class Empleados
@@ -36,9 +35,12 @@ namespace UsoArray
         {
             this.nombre = nombre;
             this.edad = edad;
-            
+
         }
-        String nombre;
-        int edad;
+        public String getInfo() => "Nombre del empleado: " + nombre + "\nEdad: " + edad;
+
+
+        private String nombre;
+        private int edad;
     }
 }
