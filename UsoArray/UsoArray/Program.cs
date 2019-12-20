@@ -21,10 +21,11 @@ namespace UsoArray
                 new {Nombre= "María", Edad= 49},
                 new {Nombre= "Diana", Edad= 35}
             };
-
-            for (int i = 0; i < valores.Length; i++)
+            int contador = 0;
+            for (int i = 15; i>=11; i++)
             {
-                Console.WriteLine(valores[i]);
+                Console.WriteLine(valores[contador]);
+                contador++;
             }
            
         }
