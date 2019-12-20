@@ -22,7 +22,7 @@ namespace UsoArray
                 new {Nombre= "Diana", Edad= 35}
             };
 
-            foreach (double variable in valores)
+            foreach (var variable in personas)
                 
             {
                 Console.WriteLine(variable); 
