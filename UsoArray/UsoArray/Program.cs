@@ -6,24 +6,29 @@ namespace UsoArray
     {
         static void Main(string[] args)
         {
-            int[] numeros = new int[4];
-            numeros[0] = 7;
-            numeros[1] = 9;
-            numeros[2] = 15;
-            numeros[3] = 3;
-            ProcesaDatos(numeros);
-            foreach (int i in numeros)
+            int[] arrayElementos = LeerDatos();
+            Console.WriteLine("Imprimiendo desde el Main...");
+            foreach (int i in arrayElementos)
             {
                 Console.WriteLine(i);
             }
 
         }
-        static void ProcesaDatos(int[] datos)
+      static int[] LeerDatos()
         {
-            for (int i = 0; i < datos.Length; i++)
+            Console.WriteLine("¿cuántos elementos quieres que tenga el array?");
+            string respuesta = Console.ReadLine();
+            int numElementos = int.Parse(respuesta);
+            int[] datos = new int[numElementos];
+            for(int i = 0; i < numElementos; i++)
             {
-                datos[i] += 10;
+                Console.WriteLine($"Introduce el dato para la posición {i}");
+                respuesta = Console.ReadLine();
+                int datosElemento = int.Parse(respuesta);
+                datos[i] = datosElemento;
+
             }
+            return datos;
         }
 
 
