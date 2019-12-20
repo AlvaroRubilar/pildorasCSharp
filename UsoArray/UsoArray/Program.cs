@@ -22,9 +22,10 @@ namespace UsoArray
                 new {Nombre= "Diana", Edad= 35}
             };
 
-            for (int i = 0; i < arrayEmpleados.Length; i++)
+            foreach (Empleados variable in arrayEmpleados)
+                
             {
-                Console.WriteLine(arrayEmpleados[i].getInfo());
+                Console.WriteLine(variable.getInfo()); 
             }
 
         }
