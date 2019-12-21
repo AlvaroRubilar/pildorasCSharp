@@ -6,15 +6,19 @@ namespace ProyectoHerencia
     {
         static void Main(string[] args)
         {
-            Caballo Babieca = new Caballo("Babieca");
-            Humano Alvaro = new Humano("Alvaro");
-            Gorila Copito = new Gorila("Copito");
+            Caballo miBabieca = new Caballo("Babieca");
+            Humano miAlvaro = new Humano("Alvaro");
+            Gorila miCopito = new Gorila("Copito");
+            Mamiferos[] almacenAnimales = new Mamiferos[3];
+            almacenAnimales[0] = miBabieca;
+            almacenAnimales[1] = miAlvaro;
+            almacenAnimales[2] = miCopito;
+            almacenAnimales[1].getNombre();
 
-            Object miAnimal = new Caballo("Bucéfalo");
-            Object miPersona = new Humano("Juan");
-            
 
-            
+
+
+
             //Copito.trepar();
             //Alvaro.getNombre();
             //Babieca.getNombre();
