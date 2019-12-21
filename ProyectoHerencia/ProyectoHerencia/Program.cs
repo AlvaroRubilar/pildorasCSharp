@@ -10,9 +10,10 @@ namespace ProyectoHerencia
             Humano Alvaro = new Humano("Alvaro");
             Gorila Copito = new Gorila("Copito");
 
-            Mamiferos animal = new Mamiferos("Bucéfalo");
-            Caballo Bucefalo = new Caballo("Bucéfalo");
-            animal = Bucefalo;
+            Object miAnimal = new Caballo("Bucéfalo");
+            Object miPersona = new Humano("Juan");
+            
+
             
             //Copito.trepar();
             //Alvaro.getNombre();
