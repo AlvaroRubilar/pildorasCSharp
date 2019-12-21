@@ -11,6 +11,8 @@ namespace ProyectoHerencia
             Gorila Copito = new Gorila("Copito");
             Copito.trepar();
             Alvaro.getNombre();
+            Babieca.getNombre();
+            Copito.getNombre();
         }
     }
 
