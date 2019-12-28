@@ -37,7 +37,7 @@ namespace ProyectoHerencia
             Console.WriteLine("Soy capaz de respirar");
 
         }
-        public void pensar()
+        public virtual void pensar()
         {
             Console.WriteLine("Pensamiento básico instintivo");
         }
@@ -70,7 +70,7 @@ namespace ProyectoHerencia
         {
 
         }
-        public void pensar()
+        public override void pensar()
         {
             Console.WriteLine("Soy capaz de pensar ¿?");
         }
@@ -83,7 +83,7 @@ namespace ProyectoHerencia
 
         }
 
-        public void pensar()
+        public override void pensar()
         {
             Console.WriteLine("Pensamiento instintivo avanzado");
         }
