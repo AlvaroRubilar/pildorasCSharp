@@ -37,6 +37,10 @@ namespace ProyectoHerencia
             Console.WriteLine("Soy capaz de respirar");
 
         }
+        public void pensar()
+        {
+            Console.WriteLine("Pensamiento básico instintivo");
+        }
 
         public void cuidarCrias()
         {
@@ -68,7 +72,7 @@ namespace ProyectoHerencia
         }
         public void pensar()
         {
-            Console.WriteLine("Soy capaz de pensar");
+            Console.WriteLine("Soy capaz de pensar ¿?");
         }
     }
 
@@ -77,6 +81,11 @@ namespace ProyectoHerencia
         public Gorila(String nombreGorila) : base(nombreGorila)
         {
 
+        }
+
+        public void pensar()
+        {
+            Console.WriteLine("Pensamiento instintivo avanzado");
         }
         public void trepar()
         {
