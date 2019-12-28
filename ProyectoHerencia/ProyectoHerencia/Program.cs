@@ -7,13 +7,23 @@ namespace ProyectoHerencia
         static void Main(string[] args)
         {
             Caballo miBabieca = new Caballo("Babieca");
+
             Humano miAlvaro = new Humano("Alvaro");
+
             Gorila miCopito = new Gorila("Copito");
+
             Mamiferos[] almacenAnimales = new Mamiferos[3];
+
             almacenAnimales[0] = miBabieca;
+
             almacenAnimales[1] = miAlvaro;
+
             almacenAnimales[2] = miCopito;
-            almacenAnimales[1].getNombre();
+
+            for (int i = 0; i < 3; i++)
+            {
+                almacenAnimales[i].pensar();
+            }
 
 
 
