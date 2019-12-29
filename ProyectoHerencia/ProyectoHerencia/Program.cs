@@ -156,7 +156,7 @@ namespace ProyectoHerencia
         }
     }
 
-    class Gorila : Mamiferos, IMamiferosTerrestres
+   sealed class Gorila : Mamiferos, IMamiferosTerrestres
     {
         public Gorila(String nombreGorila) : base(nombreGorila)
         {
@@ -175,6 +175,14 @@ namespace ProyectoHerencia
         public void trepar()
         {
             Console.WriteLine("Soy capaz de trepar");
+        }
+    }
+
+    class Chimpance : Gorila
+    {
+        public Chimpance(string nombreChimpace):base(nombreChimpace)
+        {
+
         }
     }
 }
