@@ -7,11 +7,9 @@ namespace PropiedadesAcceso
         static void Main(string[] args)
         {
             Empleado Alvaro = new Empleado("Álvaro");
-            Alvaro.setSalario(1200);
-            //double nuevoSalario = Alvaro.getSalario() + 700;
-            Alvaro.salario += 700;
-            Alvaro.salario = -3500;
-            Console.WriteLine("El salario del empleado es: "+Alvaro.getSalario() );
+            Alvaro.SALARIO = 1200;
+            Console.WriteLine("El salario del empleado es:"+Alvaro.SALARIO);
+          
 
         }
     }
@@ -24,26 +22,45 @@ namespace PropiedadesAcceso
         {
             this.nombre = nombre;
         }
-        public void setSalario(double salario)
-        {
+        //public void setSalario(double salario)
+        //{
 
-            if (salario < 0)
-            {
-                Console.WriteLine("El salario no puede ser negativo. Se asignará 0 como salario");
-                this.salario = 0;
-            }
-            else
-            {
-                this.salario = salario;
-            }
+        //    if (salario < 0)
+        //    {
+        //        Console.WriteLine("El salario no puede ser negativo. Se asignará 0 como salario");
+        //        this.salario = 0;
+        //    }
+        //    else
+        //    {
+        //        this.salario = salario;
+        //    }
+        //}
+        //public double getSalario()
+        //{
+
+        //    return salario;
+        //}
+        private double evaluaSalario(double salario)
+        {
+            if (salario < 0) return 0;
+            else return salario;
+            
+           
         }
-        public double getSalario()
+        //creación de propiedad
+        public double SALARIO
         {
-
-            return salario;
+            get
+            {
+                return this.salario;
+            }
+            set
+            {
+                this.salario = evaluaSalario(value);
+            }
         }
         private string nombre;
-        public double salario;
+        private double salario;
 
 
     }
