@@ -7,8 +7,8 @@ namespace PropiedadesAcceso
         static void Main(string[] args)
         {
             Empleado Alvaro = new Empleado("Álvaro");
-            Alvaro.SALARIO = 1200;
-            Console.WriteLine("El salario del empleado es:"+Alvaro.SALARIO);
+            Alvaro.SALARIO = -750;
+            Console.WriteLine("El salario del empleado es: "+Alvaro.SALARIO);
           
 
         }
