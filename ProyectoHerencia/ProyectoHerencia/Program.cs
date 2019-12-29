@@ -61,6 +61,19 @@ namespace ProyectoHerencia
             Console.WriteLine($"El nombre del ser vivo es: {nombreSerVivo}");
         }
         public String nombreSerVivo;
+
+    }
+    class Ballena : Mamiferos
+    {
+        public Ballena(String nombreBallena):base(nombreBallena)
+        {
+
+        }
+        public void nadar()
+        {
+
+            Console.WriteLine("soy capaz de nadar");
+        }
     }
     class Caballo : Mamiferos
     {
