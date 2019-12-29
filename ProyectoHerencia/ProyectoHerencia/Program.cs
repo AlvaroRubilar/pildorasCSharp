@@ -25,7 +25,8 @@ namespace ProyectoHerencia
                 almacenAnimales[i].pensar();
             }
 
-
+            Ballena miWally= new Ballena("Wally");
+            Console.WriteLine("Número de patas de Babieca " + miBabieca.numeroPatas());
 
 
 
@@ -38,9 +39,7 @@ namespace ProyectoHerencia
     interface IMamiferosTerrestres
     {
         int numeroPatas();
-        {
         
-        }
     }
 
     class Mamiferos
@@ -81,7 +80,7 @@ namespace ProyectoHerencia
             Console.WriteLine("soy capaz de nadar");
         }
     }
-    class Caballo : Mamiferos
+    class Caballo : Mamiferos , IMamiferosTerrestres
     {
         public Caballo(String nombreCaballo) : base(nombreCaballo)
         {
@@ -91,6 +90,11 @@ namespace ProyectoHerencia
         public void galopar()
         {
             Console.WriteLine("Soy capaz de galopar");
+        }
+
+        public int numeroPatas()
+        {
+            return 4;
         }
     }
     class Humano : Mamiferos
@@ -105,11 +109,16 @@ namespace ProyectoHerencia
         }
     }
 
-    class Gorila : Mamiferos
+    class Gorila : Mamiferos,IMamiferosTerrestres
     {
         public Gorila(String nombreGorila) : base(nombreGorila)
         {
 
+        }
+
+        public int numeroPatas()
+        {
+            return 2;
         }
 
         public override void pensar()
