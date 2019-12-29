@@ -150,13 +150,25 @@ namespace ProyectoHerencia
         {
 
         }
-        public override void pensar()
+        public sealed override void pensar()
         {
             Console.WriteLine("Soy capaz de pensar ¿?");
         }
     }
+    class Adolescente : Humano
+    {
+        public Adolescente(string nombreAdolescente ):base(nombreAdolescente)
+        {
 
-   sealed class Gorila : Mamiferos, IMamiferosTerrestres
+        }
+        public override void pensar()
+        {
+
+            Console.WriteLine("Las hormonas me impiden pensar cpn claridad");
+        }
+    }
+
+  class Gorila : Mamiferos, IMamiferosTerrestres
     {
         public Gorila(String nombreGorila) : base(nombreGorila)
         {
@@ -185,4 +197,5 @@ namespace ProyectoHerencia
 
         }
     }
+
 }
