@@ -6,28 +6,28 @@ namespace ProyectoHerencia
     {
         static void Main(string[] args)
         {
-            Caballo miBabieca = new Caballo("Babieca");
+            //Caballo miBabieca = new Caballo("Babieca");
 
-            Humano miAlvaro = new Humano("Alvaro");
+            //Humano miAlvaro = new Humano("Alvaro");
 
-            Gorila miCopito = new Gorila("Copito");
+            //Gorila miCopito = new Gorila("Copito");
 
-            Mamiferos[] almacenAnimales = new Mamiferos[3];
+            //Mamiferos[] almacenAnimales = new Mamiferos[3];
 
-            almacenAnimales[0] = miBabieca;
+            //almacenAnimales[0] = miBabieca;
 
-            almacenAnimales[1] = miAlvaro;
+            //almacenAnimales[1] = miAlvaro;
 
-            almacenAnimales[2] = miCopito;
+            //almacenAnimales[2] = miCopito;
 
-            for (int i = 0; i < 3; i++)
-            {
-                almacenAnimales[i].pensar();
-            }
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    almacenAnimales[i].pensar();
+            //}
 
-            Ballena miWally = new Ballena("Wally");
-            ISaltoConPatas ImiBabieca = miBabieca;
-            Console.WriteLine("Patas utilizadas en el salto de Babieca " + ImiBabieca.numeroPatas());
+            //Ballena miWally = new Ballena("Wally");
+            //ISaltoConPatas ImiBabieca = miBabieca;
+            //Console.WriteLine("Patas utilizadas en el salto de Babieca " + ImiBabieca.numeroPatas());
 
 
 
@@ -35,6 +35,10 @@ namespace ProyectoHerencia
             //Alvaro.getNombre();
             //Babieca.getNombre();
             //Copito.getNombre();
+            Lagartija Juancho = new Lagartija("Juancho");
+            Juancho.respirar();
+            Humano Alvaro = new Humano("Alvaro");
+            Alvaro.respirar();
         }
     }
     interface IMamiferosTerrestres
