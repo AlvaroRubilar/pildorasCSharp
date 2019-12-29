@@ -26,8 +26,8 @@ namespace ProyectoHerencia
             }
 
             Ballena miWally = new Ballena("Wally");
-            IMamiferosTerrestres ImiBabieca = miBabieca;
-            Console.WriteLine("Número de patas de Babieca " + ImiBabieca.numeroPatas());
+            ISaltoConPatas ImiBabieca = miBabieca;
+            Console.WriteLine("Patas utilizadas en el salto de Babieca " + ImiBabieca.numeroPatas());
 
 
 
