@@ -35,6 +35,13 @@ namespace ProyectoHerencia
             //Copito.getNombre();
         }
     }
+    interface IMamiferosTerrestres
+    {
+        int numeroPatas();
+        {
+        
+        }
+    }
 
     class Mamiferos
     {
@@ -71,7 +78,6 @@ namespace ProyectoHerencia
         }
         public void nadar()
         {
-
             Console.WriteLine("soy capaz de nadar");
         }
     }
