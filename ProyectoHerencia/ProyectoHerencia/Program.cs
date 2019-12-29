@@ -47,6 +47,10 @@ namespace ProyectoHerencia
         Boolean esOlimpico();
 
     }
+    interface ISaltoConPatas
+    {
+        int numeroPatas();
+    }
 
     class Mamiferos
     {
