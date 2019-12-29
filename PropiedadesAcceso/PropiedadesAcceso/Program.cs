@@ -10,6 +10,7 @@ namespace PropiedadesAcceso
             Alvaro.setSalario(1200);
             //double nuevoSalario = Alvaro.getSalario() + 700;
             Alvaro.salario += 700;
+            Alvaro.salario = -3500;
             Console.WriteLine("El salario del empleado es: "+Alvaro.getSalario() );
 
         }
