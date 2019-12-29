@@ -52,18 +52,35 @@ namespace ProyectoHerencia
     {
         int numeroPatas();
     }
+    abstract class Animales
+    {
+        public void respirar()
+        {
+            Console.WriteLine("Soy capaz de respirar");
+        }
+        public abstract void getNombre();
+    }
+    class Lagartija : Animales
+    {
 
-    class Mamiferos
+        public override void getNombre()
+        {
+            Console.WriteLine("El nombre del reptil es: "+nombreReptil);
+        }
+        private string nombreReptil;
+
+        public Lagartija(string nombreReptil)
+        {
+            this.nombreReptil = nombreReptil;
+        }
+    }
+    class Mamiferos:Animales
     {
         public Mamiferos(String nombre)
         {
             nombreSerVivo = nombre;
         }
-        public void respirar()
-        {
-            Console.WriteLine("Soy capaz de respirar");
-
-        }
+       
         public virtual void pensar()
         {
             Console.WriteLine("Pensamiento básico instintivo");
@@ -73,7 +90,7 @@ namespace ProyectoHerencia
         {
             Console.WriteLine("Cuido de mis crias hasta que se valgan por si misma");
         }
-        public void getNombre()
+        public override void  getNombre()
         {
             Console.WriteLine($"El nombre del ser vivo es: {nombreSerVivo}");
         }
