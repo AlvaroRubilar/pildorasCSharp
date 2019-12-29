@@ -26,7 +26,8 @@ namespace ProyectoHerencia
             }
 
             Ballena miWally = new Ballena("Wally");
-            Console.WriteLine("Número de patas de Babieca " + miBabieca.numeroPatas());
+            IMamiferosTerrestres ImiBabieca = miBabieca;
+            Console.WriteLine("Número de patas de Babieca " + ImiBabieca.numeroPatas());
 
 
 
@@ -103,10 +104,6 @@ namespace ProyectoHerencia
             Console.WriteLine("Soy capaz de galopar");
         }
 
-        int IMamiferosTerrestres.numeroPatas()
-        {
-            return 4;
-        }
         public bool esOlimpico()
         {
             return false;
@@ -120,6 +117,10 @@ namespace ProyectoHerencia
         int ISaltoConPatas.numeroPatas()
         {
             return 2;
+        }
+        int IMamiferosTerrestres.numeroPatas()
+        {
+            return 4;
         }
     }
     class Humano : Mamiferos
