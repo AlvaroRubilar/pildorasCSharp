@@ -8,8 +8,9 @@ namespace PropiedadesAcceso
         {
             Empleado Alvaro = new Empleado("Álvaro");
             Alvaro.setSalario(1200);
-            double nuevoSalario = Alvaro.getSalario() + 700;
-            Console.WriteLine("El salario del empleado es:" +nuevoSalario);
+            //double nuevoSalario = Alvaro.getSalario() + 700;
+            Alvaro.salario += 700;
+            Console.WriteLine("El salario del empleado es: "+Alvaro.getSalario() );
 
         }
     }
@@ -41,7 +42,7 @@ namespace PropiedadesAcceso
             return salario;
         }
         private string nombre;
-        private double salario;
+        public double salario;
 
 
     }
