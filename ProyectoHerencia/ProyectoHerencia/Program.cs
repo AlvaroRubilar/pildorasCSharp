@@ -90,7 +90,7 @@ namespace ProyectoHerencia
             Console.WriteLine("soy capaz de nadar");
         }
     }
-    class Caballo : Mamiferos, IMamiferosTerrestres, IAnimalesDeportes
+    class Caballo : Mamiferos, IMamiferosTerrestres, IAnimalesDeportes, ISaltoConPatas
     {
         public Caballo(String nombreCaballo) : base(nombreCaballo)
         {
@@ -103,7 +103,7 @@ namespace ProyectoHerencia
             Console.WriteLine("Soy capaz de galopar");
         }
 
-        public int numeroPatas()
+        int IMamiferosTerrestres.numeroPatas()
         {
             return 4;
         }
@@ -115,6 +115,11 @@ namespace ProyectoHerencia
         public string tipoDeporte()
         {
             return "Hípica";
+        }
+
+        int ISaltoConPatas.numeroPatas()
+        {
+            return 2;
         }
     }
     class Humano : Mamiferos
