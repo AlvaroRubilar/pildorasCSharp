@@ -12,7 +12,7 @@ namespace StructsYEnum
         }
     }
 
-     public  class Empleado
+     public  struct Empleado
     {
         private double salarioBase;
         private double comision;
