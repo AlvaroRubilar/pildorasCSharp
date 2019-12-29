@@ -7,6 +7,9 @@ namespace PropiedadesAcceso
         static void Main(string[] args)
         {
             Empleado Alvaro = new Empleado("Álvaro");
+            Alvaro.setSalario(1200);
+            double nuevoSalario = Alvaro.getSalario() + 700;
+            Console.WriteLine("El salario del empleado es:" +nuevoSalario);
 
         }
     }
