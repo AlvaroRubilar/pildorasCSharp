@@ -62,6 +62,9 @@ namespace PropiedadesAcceso
         private string nombre;
         private double salario;
 
-        public double SALARIO { get => this.salario; set => this.salario = evaluaSalario(value); }
+        public double SALARIO {
+            get => this.salario; 
+            set => this.salario = evaluaSalario(value);
+        }
     }
 }
