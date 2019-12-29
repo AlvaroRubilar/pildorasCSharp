@@ -36,9 +36,9 @@ namespace ProyectoHerencia
             //Babieca.getNombre();
             //Copito.getNombre();
             Lagartija Juancho = new Lagartija("Juancho");
-            Juancho.respirar();
+            Juancho.getNombre();
             Humano Alvaro = new Humano("Alvaro");
-            Alvaro.respirar();
+            Alvaro.getNombre();
         }
     }
     interface IMamiferosTerrestres
@@ -96,7 +96,7 @@ namespace ProyectoHerencia
         }
         public override void  getNombre()
         {
-            Console.WriteLine($"El nombre del ser vivo es: {nombreSerVivo}");
+            Console.WriteLine($"El nombre del mamifero es: {nombreSerVivo}");
         }
         public String nombreSerVivo;
 
