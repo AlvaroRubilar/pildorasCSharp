@@ -7,7 +7,10 @@ namespace StructsYEnum
     {
         static void Main(string[] args)
         {
-            
+            Estaciones alergia = Estaciones.Primavera;
+            Console.WriteLine(alergia);
+
+
         }
     }
 
