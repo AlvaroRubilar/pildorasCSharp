@@ -8,7 +8,8 @@ namespace StructsYEnum
         static void Main(string[] args)
         {
             Estaciones alergia = Estaciones.Primavera;
-            Console.WriteLine(alergia);
+            string laAlergia = alergia.ToString();
+            Console.WriteLine(laAlergia);
 
 
         }
