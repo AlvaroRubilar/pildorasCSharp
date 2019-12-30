@@ -8,7 +8,9 @@ namespace StructsYEnum
         static void Main(string[] args)
         {
             Bonus Antonio = Bonus.bueno;
-            Console.WriteLine(Antonio);
+            double bonusAntonio = (double)Antonio;
+            double salarioAntonio = 1500 + bonusAntonio;
+            Console.WriteLine(salarioAntonio);
 
 
         }
