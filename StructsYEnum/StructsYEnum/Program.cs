@@ -2,19 +2,18 @@
 
 namespace StructsYEnum
 {
-    
+
     class Program
     {
         static void Main(string[] args)
         {
-            Estaciones alergia = Estaciones.Primavera;
-            string laAlergia = alergia.ToString();
-            Console.WriteLine(laAlergia);
+            Bonus Antonio = Bonus.bueno;
+            Console.WriteLine(Antonio);
 
 
         }
     }
 
-    enum Estaciones { Primavera, Verano, Otoño, Invierno};
+    enum Bonus { bajo = 500, normal = 1000, bueno = 1500, extra = 3000 }
 
 }
