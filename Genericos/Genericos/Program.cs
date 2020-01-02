@@ -6,15 +6,15 @@ namespace Genericos
     {
         static void Main(string[] args)
         {
-            AlmacenObjeros<Empleado> archivos = new AlmacenObjeros<Empleado>(4);
+            AlmacenObjeros<DateTime> archivos = new AlmacenObjeros<DateTime>(4);
           
            
-            archivos.agregar(new Empleado(1500));
-            archivos.agregar(new Empleado(2500));
-            archivos.agregar(new Empleado(3500));
-            archivos.agregar(new Empleado(4500));
-            Empleado salarioEmpleado = archivos.getElemento(2);
-            Console.WriteLine(salarioEmpleado.getSalario());
+            archivos.agregar(new DateTime());
+            archivos.agregar(new DateTime());
+            archivos.agregar(new DateTime());
+            archivos.agregar(new DateTime());
+            DateTime fecha = archivos.getElemento(2);
+            Console.WriteLine(fecha);
 
         }
     }
