@@ -17,6 +17,7 @@ namespace Colecciones
             //{
             //    Console.WriteLine(num);
             //}
+            numeros.Remove(6);
             for (LinkedListNode<int> nodo = numeros.First; nodo != null; nodo = nodo.Next)
             {
                 int numero = nodo.Value;
