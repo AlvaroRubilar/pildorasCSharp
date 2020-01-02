@@ -6,40 +6,37 @@ namespace Genericos
     {
         static void Main(string[] args)
         {
-            AlmacenObjeros archivos = new AlmacenObjeros(4);
-            //archivos.agregar("Alvaro");
-            //archivos.agregar("Elena");
-            //archivos.agregar("Antonio");
-            //archivos.agregar("Sandra");
+            AlmacenObjeros<Empleado> archivos = new AlmacenObjeros<Empleado>(4);
+          
            
             archivos.agregar(new Empleado(1500));
             archivos.agregar(new Empleado(2500));
             archivos.agregar(new Empleado(3500));
             archivos.agregar(new Empleado(4500));
-            Empleado salarioEmpleado = (Empleado)archivos.getElemento(2);
+            Empleado salarioEmpleado = archivos.getElemento(2);
             Console.WriteLine(salarioEmpleado.getSalario());
 
         }
     }
 
-    class AlmacenObjeros
+    class AlmacenObjeros <T>
     {
         public AlmacenObjeros(int z)
         {
-            datosElemento = new Object[z];
+            datosElemento = new T[z];
         }
-        public void agregar(Object obj)
+        public void agregar(T  obj)
         {
 
-            datosElemento[i] = obj;
+            datosElemento[i] =  obj;
             i++;
         }
-        public Object getElemento(int i)
+        public T getElemento(int i)
         {
             return datosElemento[i];
         }
 
-        private Object[] datosElemento;
+        private T[] datosElemento;
 
         private int i = 0;
     }
