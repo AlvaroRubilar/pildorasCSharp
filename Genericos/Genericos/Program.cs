@@ -16,8 +16,8 @@ namespace Genericos
             archivos.agregar(new Empleado(2500));
             archivos.agregar(new Empleado(3500));
             archivos.agregar(new Empleado(4500));
-            String nombrePersona = (String)archivos.getElemento(2);
-            Console.WriteLine(nombrePersona);
+            Empleado salarioEmpleado = (Empleado)archivos.getElemento(2);
+            Console.WriteLine(salarioEmpleado.getSalario());
 
         }
     }
