@@ -7,21 +7,16 @@ namespace Colecciones
     {
         static void Main(string[] args)
         {
-            List<int> numeros = new List<int>();// Creación Lista
-            Console.WriteLine("Introduce elementos en la colección(0 para salir)");
-            int elem = 1;
-            while (elem!=0)
+            LinkedList<int> numeros = new LinkedList<int>();
+
+            foreach(int num in new int[] { 10, 8, 6, 4, 2, 0 })
             {
-                elem = Int32.Parse(Console.ReadLine());
-                numeros.Add(elem);
+                numeros.AddFirst(num);
             }
-            numeros.RemoveAt(numeros.Count - 1);
-            Console.WriteLine("Elementos Itroducidos");
-            foreach (int elemento in numeros)
+            foreach (int num in numeros)
             {
-                Console.WriteLine(elemento);
+                Console.WriteLine(num);
             }
-            
           
         }
     }
