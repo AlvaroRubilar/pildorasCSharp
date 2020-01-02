@@ -13,11 +13,15 @@ namespace Colecciones
             {
                 numeros.AddLast(num);
             }
-            foreach (int num in numeros)
+            //foreach (int num in numeros)
+            //{
+            //    Console.WriteLine(num);
+            //}
+            for (LinkedListNode<int> nodo = numeros.First; nodo != null; nodo = nodo.Next)
             {
-                Console.WriteLine(num);
+                int numero = nodo.Value;
+                Console.WriteLine(numero);
             }
-          
         }
     }
 }
