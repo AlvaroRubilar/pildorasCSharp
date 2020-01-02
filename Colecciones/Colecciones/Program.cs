@@ -8,19 +8,19 @@ namespace Colecciones
         static void Main(string[] args)
         {
             List<int> numeros = new List<int>();// Creación Lista
-            Console.WriteLine("¿Cuántos elemntos quieres introducir?");
-            int elem = Int32.Parse(Console.ReadLine());
-
-            for (int i = 0; i < elem; i++)
+            Console.WriteLine("Introduce elementos en la colección(0 para salir)");
+            int elem = 1;
+            while (elem!=0)
             {
-                Console.Write($"Ingresa el elemento {i}: ");
-                numeros.Add(Int32.Parse(Console.ReadLine()));
+                elem = Int32.Parse(Console.ReadLine());
+                numeros.Add(elem);
             }
-            Console.WriteLine("Elementos Introducidos");
-            for (int i = 0; i < numeros.Count; i++)
+            Console.WriteLine("Elementos Itroducidos");
+            foreach (int elemento in numeros)
             {
-                Console.WriteLine(numeros[i]);
+                Console.WriteLine(elemento);
             }
+            
           
         }
     }
