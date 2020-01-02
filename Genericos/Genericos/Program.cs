@@ -7,12 +7,18 @@ namespace Genericos
         static void Main(string[] args)
         {
             AlmacenObjeros archivos = new AlmacenObjeros(4);
-            archivos.agregar("Alvaro");
-            archivos.agregar("Elena");
-            archivos.agregar("Antonio");
-            archivos.agregar("Sandra");
+            //archivos.agregar("Alvaro");
+            //archivos.agregar("Elena");
+            //archivos.agregar("Antonio");
+            //archivos.agregar("Sandra");
+           
+            archivos.agregar(new Empleado(1500));
+            archivos.agregar(new Empleado(2500));
+            archivos.agregar(new Empleado(3500));
+            archivos.agregar(new Empleado(4500));
             String nombrePersona = (String)archivos.getElemento(2);
             Console.WriteLine(nombrePersona);
+
         }
     }
 
@@ -32,7 +38,21 @@ namespace Genericos
         {
             return datosElemento[i];
         }
+
         private Object[] datosElemento;
+
         private int i = 0;
+    }
+    class Empleado
+    {
+        
+
+        public Empleado(double salario)
+        {
+            this.salario = salario;
+        }
+        public double getSalario() => salario;
+
+        private double salario;
     }
 }
