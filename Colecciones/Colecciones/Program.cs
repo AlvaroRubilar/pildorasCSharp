@@ -11,7 +11,7 @@ namespace Colecciones
 
             foreach(int num in new int[] { 10, 8, 6, 4, 2, 0 })
             {
-                numeros.AddFirst(num);
+                numeros.AddLast(num);
             }
             foreach (int num in numeros)
             {
