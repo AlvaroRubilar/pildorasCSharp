@@ -15,6 +15,7 @@ namespace Colecciones
                 elem = Int32.Parse(Console.ReadLine());
                 numeros.Add(elem);
             }
+            numeros.RemoveAt(numeros.Count - 1);
             Console.WriteLine("Elementos Itroducidos");
             foreach (int elemento in numeros)
             {
