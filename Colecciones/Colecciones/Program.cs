@@ -17,7 +17,7 @@ namespace Colecciones
                 numeros.Add(Int32.Parse(Console.ReadLine()));
             }
             Console.WriteLine("Elementos Introducidos");
-            for (int i = 0; i < elem; i++)
+            for (int i = 0; i < numeros.Count; i++)
             {
                 Console.WriteLine(numeros[i]);
             }
