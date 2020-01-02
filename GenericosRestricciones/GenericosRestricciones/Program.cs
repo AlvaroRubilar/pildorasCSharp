@@ -6,10 +6,10 @@ namespace GenericosRestricciones
     {
         static void Main(string[] args)
         {
-            almacenEmpleados<Director> empleados = new almacenEmpleados<Director>(3);
-            empleados.agregar(new Director(4500));
-            empleados.agregar(new Director(1500));
-            empleados.agregar(new Director(3500));
+            almacenEmpleados<Estudiante> empleados = new almacenEmpleados<Estudiante>(3);
+            empleados.agregar(new Estudiante(4500));
+            empleados.agregar(new Estudiante(1500));
+            empleados.agregar(new Estudiante(3500));
         }
     }
     class almacenEmpleados <T> where T : IParaEmpleados
@@ -31,6 +31,16 @@ namespace GenericosRestricciones
         private int i = 0;
         private T[] datosEmpleado;
 
+    }
+    class Estudiante
+    {
+        public Estudiante(double edad)
+        {
+            this.edad = edad;
+
+        }
+        public double getEdad() => edad;
+        private double edad;
     }
     class Director:IParaEmpleados
     {
