@@ -7,22 +7,18 @@ namespace Colecciones
     {
         static void Main(string[] args)
         {
-            Stack<int> numeros = new Stack<int>();
-            // rellenando o agregando elementos la pila
+            Dictionary<string, int> edades = new Dictionary<string, int>();
+            edades.Add("Alvaro", 40);
+            edades.Add("Diandra", 32);
+            edades["María"] = 25;
+            edades["Antonio"] = 29;
 
-            foreach (int num in new int[5] { 2, 4, 6, 8, 10 })
-            {
-                numeros.Push(num);
-            }
-            //recorriendo pila
+            //recorrer diccionario
 
-            Console.WriteLine("Recorriendo el Stack");
-            numeros.Pop();
-            foreach (int num in numeros)
+            foreach (KeyValuePair<string,int> persona in edades)
             {
-                Console.WriteLine(num);
+                Console.WriteLine($"Nombre: {persona.Key}\nEdad: {persona.Value}");
             }
-            
         }
     }
 }
