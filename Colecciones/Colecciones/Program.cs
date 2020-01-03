@@ -7,17 +7,17 @@ namespace Colecciones
     {
         static void Main(string[] args)
         {
-            Queue<int> numeros = new Queue<int>();
-            // rellenando o agregando elementos a la cola
+            Stack<int> numeros = new Stack<int>();
+            // rellenando o agregando elementos la pila
 
             foreach (int num in new int[5] { 2, 4, 6, 8, 10 })
             {
-                numeros.Enqueue(num);
+                numeros.Push(num);
             }
-            //recorriendo la cola
+            //recorriendo pila
 
-            Console.WriteLine("Recorriendo el Queue");
-            numeros.Dequeue();
+            Console.WriteLine("Recorriendo el Stack");
+            numeros.Pop();
             foreach (int num in numeros)
             {
                 Console.WriteLine(num);
