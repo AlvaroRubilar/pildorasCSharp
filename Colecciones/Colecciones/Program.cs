@@ -17,7 +17,7 @@ namespace Colecciones
             //recorriendo la cola
 
             Console.WriteLine("Recorriendo el Queue");
-
+            numeros.Dequeue();
             foreach (int num in numeros)
             {
                 Console.WriteLine(num);
