@@ -9,7 +9,7 @@ namespace DelegadosPredicadosLambda
         {
             List<Personas> gente = new List<Personas>();
             Personas P1 = new Personas();
-            P1.Nombre = "Alvaro";
+            P1.Nombre = "Antonio";
             P1.Edad = 40;
 
             Personas P2 = new Personas();
