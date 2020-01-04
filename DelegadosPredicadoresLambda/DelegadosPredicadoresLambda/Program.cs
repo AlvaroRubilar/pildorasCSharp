@@ -18,18 +18,18 @@ namespace DelegadosPredicadosLambda
             //P2.Edad = 28;
 
             //Uso del delgado
-            OperacionesMatematicas operacion = new OperacionesMatematicas(num=>num*num);
-            Console.WriteLine(operacion(4));
+            OperacionesMatematicas operacion = new OperacionesMatematicas(Suma);
+            Console.WriteLine(operacion(4,7));
            
 
 
         }
-        public delegate int OperacionesMatematicas(int numero);
+        public delegate int OperacionesMatematicas(int numero1, int numero2);
         //public static int Cuadrado(int num)
         //{
         //    return num * num;
         //}
-        
+        public static int Suma(int num1, int num2) => num1 + num2;
         
     }
 
