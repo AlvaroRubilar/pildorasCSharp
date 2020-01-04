@@ -9,6 +9,8 @@ namespace DelegadosPredicadosLambda
             //creción del objeto delegado apuntando a MensajeBienvenida
             ObjDelegado ElDelegado = new ObjDelegado(MensajeBienvenida.SaludoBienvenida);
             ElDelegado();
+            ElDelegado = new ObjDelegado(MensajeDespedida.SaludoDespedida);
+            ElDelegado();
         }
         // Definición del objeto delegado
         delegate void ObjDelegado();
