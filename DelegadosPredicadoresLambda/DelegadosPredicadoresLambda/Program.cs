@@ -8,25 +8,25 @@ namespace DelegadosPredicadosLambda
         {
             //creción del objeto delegado apuntando a MensajeBienvenida
             ObjDelegado ElDelegado = new ObjDelegado(MensajeBienvenida.SaludoBienvenida);
-            ElDelegado();
+            ElDelegado("Hola acabo de llegar");
             ElDelegado = new ObjDelegado(MensajeDespedida.SaludoDespedida);
-            ElDelegado();
+            ElDelegado("Bueno ya me voy");
         }
         // Definición del objeto delegado
-        delegate void ObjDelegado();
+        delegate void ObjDelegado(string msj);
     }
     class MensajeBienvenida
     {
-        public static void SaludoBienvenida()
+        public static void SaludoBienvenida(string msj)
         {
-            Console.WriteLine("Hola acabo de llegar.¿Qué tal?");
+            Console.WriteLine($"Mensaje de Bienvenida: {msj}");
         }
     }
     class MensajeDespedida
     {
-        public static void SaludoDespedida()
+        public static void SaludoDespedida(string msj)
         {
-            Console.WriteLine("Bueno ya me marcho. Hasta luego");
+            Console.WriteLine($"Mensaje de Despedida: {msj}");
         }
     }
 }
