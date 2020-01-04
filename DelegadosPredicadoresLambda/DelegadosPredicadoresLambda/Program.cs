@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DelegadosPredicadosLambda
 {
@@ -6,27 +7,21 @@ namespace DelegadosPredicadosLambda
     {
         static void Main(string[] args)
         {
-            //creción del objeto delegado apuntando a MensajeBienvenida
-            ObjDelegado ElDelegado = new ObjDelegado(MensajeBienvenida.SaludoBienvenida);
-            ElDelegado("Hola acabo de llegar");
-            ElDelegado = new ObjDelegado(MensajeDespedida.SaludoDespedida);
-            ElDelegado("Bueno ya me voy");
+            List<int> listaNumeros = new List<int>();
+            listaNumeros.AddRange(new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 });
+
+            //Declaramos delegado predicado
+            Predicate<int> elDelegadoPred = new Predicate<int>(DamePares);
+            List<int> numPares = listaNumeros.FindAll(elDelegadoPred);
+            foreach (var num in numPares)
+               
+            {
+                Console.WriteLine(num);
+
+            }
         }
-        // Definición del objeto delegado
-        delegate void ObjDelegado(string msj);
+       static bool DamePares(int num)=> num % 2 == 0 ? true : false;
+        
     }
-    class MensajeBienvenida
-    {
-        public static void SaludoBienvenida(string msj)
-        {
-            Console.WriteLine($"Mensaje de Bienvenida: {msj}");
-        }
-    }
-    class MensajeDespedida
-    {
-        public static void SaludoDespedida(string msj)
-        {
-            Console.WriteLine($"Mensaje de Despedida: {msj}");
-        }
-    }
+    
 }
