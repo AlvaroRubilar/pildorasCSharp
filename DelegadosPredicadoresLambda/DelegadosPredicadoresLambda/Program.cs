@@ -17,19 +17,15 @@ namespace DelegadosPredicadosLambda
             //P2.Nombre = "María";
             //P2.Edad = 28;
 
-            //Uso del delgado
-            OperacionesMatematicas operacion = new OperacionesMatematicas((num1,num2) => num1 + num2);
-            Console.WriteLine(operacion(4,7));
-           
+            
+
+            List<int> numeros = new List<int> { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            List<int> numerosPares = numeros.FindAll(i => i % 2 == 0);
+            foreach (int numero in numerosPares) Console.WriteLine(numero);
 
 
         }
-        public delegate int OperacionesMatematicas(int numero1, int numero2);
-        //public static int Cuadrado(int num)
-        //{
-        //    return num * num;
-        //}
-        //public static int Suma(int num1, int num2) => num1 + num2;
+        
         
     }
 
