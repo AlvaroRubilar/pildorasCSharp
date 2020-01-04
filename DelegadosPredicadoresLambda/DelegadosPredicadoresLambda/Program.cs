@@ -22,14 +22,14 @@ namespace DelegadosPredicadosLambda
 
             gente.AddRange(new Personas[] { P1, P2, P3 });
 
-            Predicate<Personas> elPredicado = new Predicate<Personas>(ExisteAlvaro);
+            Predicate<Personas> elPredicado = new Predicate<Personas>(ExistenMayoresDeEdad);
 
             bool existe = gente.Exists(elPredicado);
-            Console.WriteLine(existe ? "Hay Personas con el nombre Alvaro":"No hay nadie llamado Alvaro") ;
+            Console.WriteLine(existe ? "Hay Personas mayores de edad":"No hay nadie mayor de edad") ;
 
 
         }
-        static bool ExisteAlvaro(Personas persona) => persona.Nombre == "Alvaro" ? true : false;
+        static bool ExistenMayoresDeEdad(Personas persona) => persona.Edad>=18 ? true : false;
         
         
     }
