@@ -17,13 +17,13 @@ namespace DelegadosPredicadosLambda
             P2.Nombre = "María";
             P2.Edad = 28;
             ComparaPersonas comparaEdad = (persona1, persona2) => persona1 == persona2;
-            Console.WriteLine(comparaEdad(P1.Edad,P2.Edad));
+            Console.WriteLine(comparaEdad(P1.Nombre,P2.Nombre));
             
 
 
 
         }
-        public delegate bool ComparaPersonas(int edad1, int edad2);
+        public delegate bool ComparaPersonas(string n1, string n2);
         
         
     }
