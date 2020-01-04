@@ -18,7 +18,7 @@ namespace DelegadosPredicadosLambda
             //P2.Edad = 28;
 
             //Uso del delgado
-            OperacionesMatematicas operacion = new OperacionesMatematicas(Suma);
+            OperacionesMatematicas operacion = new OperacionesMatematicas((num1,num2) => num1 + num2);
             Console.WriteLine(operacion(4,7));
            
 
@@ -29,7 +29,7 @@ namespace DelegadosPredicadosLambda
         //{
         //    return num * num;
         //}
-        public static int Suma(int num1, int num2) => num1 + num2;
+        //public static int Suma(int num1, int num2) => num1 + num2;
         
     }
 
