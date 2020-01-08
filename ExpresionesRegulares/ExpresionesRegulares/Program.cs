@@ -7,7 +7,7 @@ namespace ExpresionesRegulares
     {
         static void Main(string[] args)
         {
-            string frase = "Mi nombre es juan y mi n° de tfno es (+34)123-45-67 y mi código postal es 29679";
+            string frase = "Mi nombre es juan y mi n° de tfno es (+47)123-45-67 (+34)123-45-67 y mi código postal es 29679";
             string patron = @"\+34";
             Regex miRegex = new Regex(patron);
             MatchCollection elMatch = miRegex.Matches(frase);
