@@ -7,12 +7,16 @@ namespace ExpresionesRegulares
     {
         static void Main(string[] args)
         {
-            string frase = "Mi web es http://pildorasinformaticas.es";
-            string patron = "https?://(www.)?pildorasinformaticas.es";
-            Regex miRegex = new Regex(patron);
-            MatchCollection elMatch = miRegex.Matches(frase);
+            string txt = "cursos@@pildorasinformaticases";
 
-            Console.WriteLine(elMatch.Count > 0? "Se ha encontrado web":"No se ha encontrado web");
+            string re1 = ".*?";
+            string re2 = "(@)";
+            string re3 = ".*?";
+            string re4 = "(\\.)";
+
+            Regex r = new Regex(re1 + re2 + re3 + re4, RegexOptions.IgnoreCase | RegexOptions.Singleline);
+            Match m = r.Match(txt);
+            Console.WriteLine(m.Success?"Email correcto":"Email no correcto");
         }
     }
 }
