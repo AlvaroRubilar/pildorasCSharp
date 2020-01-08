@@ -7,7 +7,7 @@ namespace ExpresionesRegulares
     {
         static void Main(string[] args)
         {
-            string txt = "cursos@@pildorasinformaticases";
+            string txt = "cursos@@pildorasinformaticas.es";
 
             string re1 = ".*?";
             string re2 = "(@)";
